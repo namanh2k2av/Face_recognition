@@ -12,7 +12,8 @@ def create_Data():
     count = 0
     nameID = str(input("Nhap ten cua ban: "))
     path = 'data/origin/' + nameID
-    isExist = os.path.exists(path)
+    path1 = 'data/processed/' + nameID
+    isExist = os.path.exists(path1)
 
     if isExist:
         print("Ten da ton tai!")
